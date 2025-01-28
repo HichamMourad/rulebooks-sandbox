@@ -20,7 +20,8 @@
         - run_job_template:
             name: Clone Repo
             organization: Default
-            extra_vars:
-              git_dest: "{{ event.payload.git_dest }}"
+            job_args:
+              extra_vars:
+                git_dest: "{{ event.payload.git_dest }}"
         - debug:
             msg: "Executed  clone to {{ event.payload.git_dest }}"
