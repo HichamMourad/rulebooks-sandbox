@@ -13,7 +13,7 @@
 
   rules:
     - name: Simon Says
-      condition: startswith(event.payload.message, "Simon Says")
+      condition: event.payload.message is match("simon says*")
 
   ## Define the action we should take should the condition be met
 
