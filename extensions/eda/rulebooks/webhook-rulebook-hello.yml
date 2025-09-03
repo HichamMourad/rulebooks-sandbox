@@ -11,4 +11,4 @@
       condition: event.payload.message is defined
       actions:
         - run_job_template:
-            name: "SayHello"
+            name: SayHello
