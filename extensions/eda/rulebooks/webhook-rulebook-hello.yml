@@ -12,5 +12,6 @@
       actions:
         - run_job_template:
             name: SayHello
+            organization: Default
             vars:
               incoming_message: "{{ event.payload.message }}"
