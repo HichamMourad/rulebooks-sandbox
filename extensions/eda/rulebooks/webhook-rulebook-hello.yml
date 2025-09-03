@@ -10,10 +10,5 @@
     - name: Say Hello when webhook triggered
       condition: event.payload.message is defined
       actions:
-        - run_playbook:
-            name: hello.yml
-            inventory:
-              hosts:
-                all:
-                  hosts:
-                    localhost:
+        - run_job_template:
+            name: "SayHello"
