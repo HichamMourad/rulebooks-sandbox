@@ -8,7 +8,7 @@
 
   rules:
     - name: Say Hello when webhook triggered
-      condition: event.payload.message is defined
+      condition: event.payload.message == "Hello from webhook"
       actions:
         - run_job_template:
             name: SayHello
