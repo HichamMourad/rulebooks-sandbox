@@ -12,3 +12,4 @@
       actions:
         - run_job_template:
             name: SayHello
+            organization: Default
